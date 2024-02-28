@@ -8,7 +8,9 @@ routerCart.route('/')
     .post(create);
 
 routerCart.route('/:id')
-    .delete(remove)
-    .put(update);
+    .get(getOne)
+    .put(update)
+    .delete(remove);
+    
 
 module.exports = routerCart;
