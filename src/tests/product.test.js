@@ -101,7 +101,7 @@ test("GET_ONE -> 'BASE_URL/:productId', should return status code 200, res.body 
     const res = await request(app)
       .get(`${BASE_URL}/${productId}`)
   
-    console.log(res.body);
+    
   
     expect(res.status).toBe(200)
     expect(res.body).toBeDefined()
